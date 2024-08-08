@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Watch Store</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/cart.css" />
+    <link rel="icon" href="images/cart.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">WatchStore</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+
+          <!-- <li><a href="login.html">Login</a></li> -->
+
+          
+          <a href="login.html" id="login-link" class="btn">Login</a>
+          <!-- <button id="logout-button" style="display: none">Logout</button> -->
+          <button id="logout-button" style="display: none" onclick="window.location.href='login.html'">Logout</button>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart">
+        <h2>Your Collection of watches</h2>
+        <div class="cart-container">
+          <!-- Example of a cart item -->
+          <div class="cart-item">
+            <img src="images/watch1.jpg" alt="Watch 1" />
+            <div class="item-details">
+              <h3>Modern Classic</h3>
+              <p>$299.99</p>
+              <button class="btn-remove">Remove</button>
+            </div>
+          </div>
+          <!-- Add more cart items as needed -->
+        </div>
+
+        <div class="cart-summary">
+          <h3>Total: $299.99</h3>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="simple-footer">
+      <h3>Made With <i class="fas fa-heart heart-icon"></i> By WaleedCodes</h3>
+        <p>&copy; 2024 WatchStore. All Rights Reserved.</p>
+      </footer>
+    
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <script src="./JS/cart.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

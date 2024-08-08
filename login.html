@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Watch Store</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="icon" href="images/cart.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">WatchStore</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+
+          
+          <a href="login.html" id="login-link" class="btn">Login</a>
+          <!-- <button id="logout-button" style="display: none">Logout</button> -->
+          <button id="logout-button" style="display: none" onclick="window.location.href='login.html'">Logout</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <h1>Login/Logout </h1>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+        </form>
+        <button id="logout-button" style="display: none">Logout</button>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="simple-footer">
+      <h3>Made With <i class="fas fa-heart heart-icon"></i> By WaleedCodes</h3>
+      <p>&copy; 2024 WatchStore. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    
+    
+    <script src="JS/login.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="icon" href="images/cart.png" type="image/png">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">WatchStore</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <!-- <li><a href="login.html">Login</a></li> -->
+
+          
+          <a href="login.html" id="login-link" class="btn">Login</a>
+
+          <!-- <button id="logout-button" style="display: none">Logout</button> -->
+
+          <button id="logout-button" style="display: none " onclick="window.location.href='login.html'">Logout</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <div class="main-content">
+          <div class="text-content">
+            <h1>Welcome to WatchStore</h1>
+            <h3>Your ultimate destination for luxury watches.</h3>
+            <p>
+              At WatchStore, we believe in the timeless elegance and
+              craftsmanship of luxury watches. Founded with a passion for
+              horology, our mission is to bring the finest collection of
+              timepieces to watch enthusiasts and collectors around the world.
+            </p>
+            <a href="product.html" class="btn">Our Products</a>
+          </div>
+          <div class="image-content">
+            <img src="images/image5.webp" alt="Fancy Watch" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            At WatchStore, we are dedicated to providing you with the best
+            luxury watches available. Our team of experts is passionate about
+            horology and committed to offering you a curated selection of the
+            finest timepieces from around the world.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Watches Section -->
+      <section class="featured">
+        <h2>Featured Watches</h2>
+        <div class="featured-container">
+          <div class="featured-card">
+            <img src="images/image5.webp" alt="Modern Classic" />
+            <h3>Modern Classic</h3>
+          </div>
+          <div class="featured-card">
+            <img src="images/image6.webp" alt="Elegant Gold" />
+            <h3>Elegant Gold</h3>
+          </div>
+          <div class="featured-card">
+            <img src="images/image8.jfif" alt="Sporty Blue" />
+            <h3>Sporty Blue</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="simple-footer">
+      <h3>Made With <i class="fas fa-heart heart-icon"></i> By WaleedCodes</h3>
+      <p>&copy; 2024 WatchStore. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Script to toggle mobile menu
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>

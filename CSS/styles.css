@@ -1,0 +1,299 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+  opacity: 0.9;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f9a826;
+}
+/* Common button styling */
+.btn {
+  display: inline-block;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: white; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: yellow; 
+}
+
+.btn:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Specific styling for Login and Logout buttons */
+#login-link {
+  display: none;
+}
+#logout-link{
+  display: none;
+}
+#logout-button {
+  border: none;
+  border-radius: 5px ;
+  display: none;
+  /* background-color: #dc3545;  */
+  background-color: white;
+  color: black;
+  
+}
+
+#logout-button:hover {
+  /* background-color: #c82333; */
+  background-color: yellow;
+  
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  /* background-color: #f4f4f4; */
+  background-color: black;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  width: 90%;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  /* color: #333; */
+  color: yellow;
+}
+
+.text-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  /* color: #666; */
+  color: white;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  /* color: #555; */
+  color: white;
+}
+
+.text-content .btn {
+  padding: 15px 30px;
+  background: #ff9800;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.text-content .btn:hover {
+  background: #e68a00;
+}
+
+.image-content {
+  max-width: 45%;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 0;
+  /* background-color: #fff; */
+  background-color: black;
+  text-align: center;
+}
+
+.about-section .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  /* color: #333; */
+  color: yellow;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  /* color: #555; */
+  color: white;
+}
+
+/* Featured Watches Section */
+.featured {
+  padding: 60px 20px;
+  /* background-color: #f9f9f9; */
+  background-color: black;
+}
+
+.featured h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  /* color: #333; */
+  color: white;
+}
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.featured-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 10px;
+  border: 5px solid white;
+}
+
+.featured-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.featured-card h3 {
+  font-size: 1.25rem;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Simple Footer */
+.simple-footer {
+  background-color: #333;
+  /* background-color: powderblue; */
+  /* color: black; */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.simple-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.heart-icon {
+  color: red;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-card {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+}

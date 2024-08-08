@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Watch Store</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/product.css" />
+    <link rel="icon" href="images/cart.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">WatchStore</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+
+          <!-- <li><a href="login.html">Login</a></li> -->
+
+          <a href="login.html" id="login-link" class="btn">Login</a>
+          <!-- <button id="logout-button" style="display: none">Logout</button> -->
+          <button id="logout-button" style="display: none" onclick="window.location.href='login.html'">Logout</button>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-list">
+        <h2>Our Products</h2>
+        <div class="product-container">
+          <div class="product-card">
+            <img src="images/watch.jfif" alt="Watch 1" />
+            <h3>Modern Classic</h3>
+            <p>$299.99</p>
+            <p>description: "A timeless classic watch with leather strap"</p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="images/watch1.jfif" alt="Watch 2" />
+            <h3>Elegant Gold</h3>
+            <p>$399.99</p>
+            <p>description: "A sleek modern watch with a minimalist design."</p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/watch2.jfif" alt="Watch 3" />
+            <h3>Sporty Blue</h3>
+            <p>$199.99</p>
+            <p>description: "An elegant timepiece with a durable stainless steel band." </p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/watch6.jfif" alt="Watch 3" />
+            <h3>Elegant Silver</h3>
+            <p>$200.99</p>
+            <p>description: "A rugged watch built for outdoor adventures."</p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/watch4.jfif" alt="Watch 3" />
+            <h3>Classic Black</h3>
+            <p>$499.99</p>
+            <p>description: "A luxury watch featuring a polished gold finish."
+            </p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/watch5.jfif" alt="Watch 3" />
+            <h3>Vintage Gold</h3>
+            <p>$599.99</p>
+            <p>description: "A versatile watch with interchangeable straps for any occasion." </p>
+            <a href="#cart.html" class="btn">Add to Cart</a>
+          </div>
+          <!--  We Can Add More Products Here  -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="simple-footer">
+      <h3>Made With <i class="fas fa-heart heart-icon"></i> By WaleedCodes</h3>
+      <p>&copy; 2024 WatchStore. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+   
+    <script src="JS/product.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
